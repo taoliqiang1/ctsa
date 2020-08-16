@@ -288,6 +288,7 @@ void auto_arima_free(auto_arima_object object);
 
 void ar_free(ar_object object);
 
+void predict(double *inp, double *xpred, double *amse, int train_len, int pred_len);
 // Yule-Walker, Burg and Hannan Rissanen Algorithms for Initial Parameter Estimation
 
 void yw(double *x, int N, int p, double *phi, double *var);
