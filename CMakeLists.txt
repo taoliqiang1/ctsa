@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 2.8.0 FATAL_ERROR)
 set(PROJECT_NAME ctsa)
 project(${PROJECT_NAME} CXX C)
 
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_C_FLAGS "-O0 -g  -I/usr/include/python2.7")
+set(CMAKE_CXX_FLAGS "-O0 -Wall -g -ggdb -I/usr/include/python2.7")
 
 # src root path
 set(CTSA_SRC_ROOT ${PROJECT_SOURCE_DIR} CACHE PATH "ctsa source root")
