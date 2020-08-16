@@ -1,3 +1,7 @@
+add_executable(main main.cpp)
+
+target_link_libraries(main ctsalib python2.7 m)
+
 add_executable(acftest acftest.c)
 
 target_link_libraries(acftest ctsalib m)
@@ -55,7 +59,8 @@ add_executable(autoarimatest3 autoarimatest3.c)
 target_link_libraries(autoarimatest3 ctsalib m)
 
 
-set_target_properties(acftest arimatest artest artest2 pacftest sarimatest misctests dwttests sarimaxtest1 sarimaxtest2 sarimaxtest3 autoarimatest1 autoarimatest2 autoarimatest3
+set_target_properties(main acftest arimatest artest artest2 pacftest sarimatest misctests dwttests sarimaxtest1 sarimaxtest2 sarimaxtest3 autoarimatest1 autoarimatest2 autoarimatest3
         PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/test"
 )
+
