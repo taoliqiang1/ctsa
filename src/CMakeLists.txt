@@ -6,6 +6,7 @@ set(SOURCE_FILES   	autoutils.c
 					brent.c
 					conjgrad.c
 					conv.c
+                                        predict.c
 					ctsa.c
 					dist.c
 					emle.c
